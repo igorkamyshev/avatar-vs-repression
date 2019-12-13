@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>Аватарки против репрессий</title>
+  <meta name="description" content="Сервис для создания аватарок поддержки политических заключенных">
+  <meta name="keywords" content="Россия,политика,репрессии,аватарки">
+  <meta name="author" content="Игорь Камышев">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="twitter:card" content="Аватарки против репрессий" />
+  <meta name="twitter:site" content="@devs_against" />
+  <meta name="twitter:creator" content="@kamyshev_code" />
+  <meta property="og:url" content="https://avatar.kamyshev.me" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Аватарки против репрессий" />
+  <meta property="og:description" content="Сервис для создания аватарок поддержки политических заключенных" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="page__container">
+
+    <main class="page">
+
+      <section class="work">
+        <canvas id="viewport" class="viewport" height="800" width="800"></canvas>
+        <label for="avatar" class="ghost label" id="avatar-label">
+          Загрузить картинку
+        </label>
+        <input type="file" id="avatar" class="file" name="avatar" accept="image/png, image/jpeg">
+      </section>
+      
+      <aside class="mask__container">
+        <img src="./mask/1.png" class="mask">
+        <img src="./mask/2.png" class="mask">
+        <img src="./mask/3.png" class="mask">
+      </aside>
+      
+      <button id="save" class="save">Сохранить</button>
+    </main>
+  </div>
+
+  <a href="https://github.com/developers-against-repressions/devs-against-the-machine" target="_blank" rel="noopener" class="ghost what">Что происходит?</a>
+
+  <script src="./index.ts"></script>
+</body>
+
+</html>

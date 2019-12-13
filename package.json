@@ -1,0 +1,31 @@
+{
+  "name": "avatar-vs-repression",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Igor Kamyshev <igor@kamyshev.me>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "s": "yarn soda"
+  },
+  "devDependencies": {
+    "@solid-soda/scripts": "^1.14.9",
+    "@types/lodash.partition": "^4.6.6",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "lodash.partition": "^4.6.0",
+    "storeon": "^0.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn soda lint-staged",
+      "pre-push": "yarn soda lint",
+      "commit-msg": "yarn soda commitlint"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
