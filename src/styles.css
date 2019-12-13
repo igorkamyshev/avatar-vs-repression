@@ -54,18 +54,18 @@ body {
   padding: 8px;
   font-size: 15px;
   line-height: 18px;
+  color: black;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
   background: #fff;
   border-radius: 4px;
-  text-decoration: none;
-  color: black;
 }
 
 .what {
   position: absolute;
-  bottom: 12px;
   right: 12px;
+  bottom: 12px;
 }
 
 .label {
@@ -161,11 +161,11 @@ body {
 
   .what {
     position: relative;
-    bottom: initial;
     right: initial;
-    margin: 12px;
-    width: calc(100% - 24px);
+    bottom: initial;
     display: block;
+    width: calc(100% - 24px);
+    margin: 12px;
     margin-bottom: 24px;
   }
 }
