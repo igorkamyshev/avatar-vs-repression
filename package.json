@@ -6,10 +6,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
     "s": "yarn soda"
   },
   "devDependencies": {
-    "@solid-soda/scripts": "^1.14.9",
+    "@solid-soda/scripts": "^1.15.0",
     "@types/lodash.partition": "^4.6.6",
     "parcel-bundler": "^1.12.4",
     "typescript": "^3.7.2"
